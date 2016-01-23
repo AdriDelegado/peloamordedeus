@@ -43,13 +43,16 @@ public:
 	void setInimigoY(int inimigoY){}
 	int getMove()  { return 0; }
 	void setMove(int move)  {}
-	Unidade *duplica(){
+
+	//FALTA CONTRUDOR POR COPIA NA CLASS UNIDADE
+	/*Unidade *duplica(){
 		return new Capitao(*this);
-	}
+	}*/
 
-
+	
 	int reparaIntegridade();
 	void respira();
+	void move();
 };
 
 #endif

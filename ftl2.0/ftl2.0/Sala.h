@@ -43,17 +43,18 @@ public:
 			return *this;
 		}
 
-		id = id;
-		posicao = x.posicao;
-		oxigenio = x.oxigenio;
-		integridade = x.integridade;
+		this->id = id;
+		this->posicao = x.posicao;
+		this->oxigenio = x.oxigenio;
+		this->integridade = x.integridade;
 
-		brecha = x.brecha;
-		fogo = x.fogo;
-		curtoCircuito = x.curtoCircuito;
+		this->brecha = x.brecha;
+		this->fogo = x.fogo;
+		this->curtoCircuito = x.curtoCircuito;
 
-		nome = x.nome;
-
+		this->nome = x.nome;
+		adjacentes = x.adjacentes;
+	
 		return *this;
 	}
 
@@ -92,14 +93,15 @@ public:
 	//pegar salas a volta funcao
 	//pegar quem esta na sala
 	void danificarSala(int dano);
-	virtual vector<int> getAdjacenteSala() = 0;
+	
 	//string eliminaUnidade(Unidade *u);
 	virtual Sala *duplica() = 0;
-	virtual void setAdjacenteSala() = 0 ;
+	
 
 	virtual bool verificaId(string id) = 0;
 
-	
+	virtual vector<int> getAdjacenteSala() = 0;
+	virtual void setAdjacenteSala() = 0;
 
 };
 

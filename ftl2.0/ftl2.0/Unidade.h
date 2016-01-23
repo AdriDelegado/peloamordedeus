@@ -73,9 +73,9 @@ public:
 	//ataca
 
 
-	virtual int reparaIntegridade();
-	virtual void respira();
-	virtual void move();
+	virtual int reparaIntegridade()=0;
+	virtual void respira()=0;
+	virtual void move()=0;
 };
 
 

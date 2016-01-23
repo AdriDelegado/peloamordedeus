@@ -48,5 +48,6 @@ public:
 
 	int reparaIntegridade();
 	void respira();
+	void move();
 };
 #endif

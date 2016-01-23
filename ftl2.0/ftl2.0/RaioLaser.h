@@ -35,7 +35,7 @@ public:
 	string	getNome() { return this->nome; }
 	string setUnidade(Unidade *u);
 	vector<int> getAdjacenteSala();
-
+	void setAdjacenteSala();
 	//TRETA
 	void	setNivelEscudo(int nivelEscudo);
 	int		getNivelEscudo();

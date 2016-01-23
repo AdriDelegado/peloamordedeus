@@ -1,6 +1,6 @@
 #include "Inimigos.h"
 #include "Sala.h"
-
+#include "Nave.h"
 
 Inimigos::Inimigos(string id, Sala *s) : Unidade(4, true, 1, 2, 15, true, 0, "Pirata", id, s){
 
@@ -27,6 +27,7 @@ void Inimigos::respira(){
 
 void Inimigos::move(Nave *n)
 {
+	
 	random_device rd;
 	mt19937 mt(rd());
 	uniform_int_distribution<int> dist(1, 100);

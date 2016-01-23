@@ -45,8 +45,8 @@ public:
 	string getNome() { return this->nome; }
 	bool verificaId(string id);
 	string setUnidade(Unidade *u);
-	vector<int> getAdjacenteSala();
-
+	
+	
 	Sala *duplica(){
 		return new Escudo(*this);
 	}

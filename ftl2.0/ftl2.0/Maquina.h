@@ -40,7 +40,7 @@ public:
 	void	setNivelEscudoActual(int nivelEscudoActual);
 	int		getNivelEscudoActual();
 	vector<int> getAdjacenteSala();
-
+	void setAdjacenteSala();
 
 	Sala *duplica(){
 		return new Maquina(*this);

@@ -38,6 +38,7 @@ public:
 	
 	//não puras
 
+	int reparaIntegridade();
 	void respira();
 	void move(Nave *n);
 
