@@ -1,10 +1,7 @@
 #include "Inimigos.h"
 #include "Sala.h"
 #include "Nave.h"
-<<<<<<< HEAD
 
-=======
->>>>>>> origin/master
 
 Inimigos::Inimigos(string id, Sala *s) : Unidade(4, true, 1, 2, 15, true, 0, "Pirata", id, s){
 

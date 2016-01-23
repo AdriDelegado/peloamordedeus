@@ -44,7 +44,7 @@ public:
 	int		getNivelEscudoActual();
 	void	setAdjacenteSala();
 	vector<int> getAdjacenteSala();
-	void setAdjacenteSala();
+	
 
 	Sala *duplica(){
 		return new Ponte(*this);

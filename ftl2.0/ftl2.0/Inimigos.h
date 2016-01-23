@@ -38,14 +38,13 @@ public:
 	
 	
 
-	int reparaIntegridade();
-<<<<<<< HEAD
+	int reparaIntegridade(){ return 0; }
+
 	void respiraOxigenio();
 	void moveProb(Nave *n);
-=======
-	void respira();
-	void move(Nave *n);
->>>>>>> origin/master
+
+
+
 
 };
 

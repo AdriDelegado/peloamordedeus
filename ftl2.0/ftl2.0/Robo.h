@@ -43,15 +43,12 @@ public:
 	virtual int getMove()  { return 0; }
 	virtual void setMove(int move)  {}
 
-	int reparaIntegridade();
-<<<<<<< HEAD
-	void respiraOxigenio();
-	void moveProb(Nave *n);
+	int reparaIntegridade(){ return 0; }
 
-=======
-	void respira();
-	void move();
->>>>>>> origin/master
+	void respiraOxigenio(){}
+	void moveProb(Nave *n){}
+
+
 };
 
 #endif
