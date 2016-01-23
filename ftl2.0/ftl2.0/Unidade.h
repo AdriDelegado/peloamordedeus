@@ -7,7 +7,7 @@
 
 using namespace std;
 class Sala;
-
+class Nave;
 class Unidade{
 protected:
 	int hp;

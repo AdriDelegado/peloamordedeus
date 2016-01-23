@@ -9,7 +9,6 @@
 using namespace std;
 
 class Inimigos : public Unidade{
-
 public:
 
 	Inimigos(string id, Sala *s);
