@@ -73,9 +73,7 @@ bool Jogo::VerificaNaveAnda(Nave *n,Sala *sMaquina) //verifica se a nave pode an
 	return false;
 }
 
-void Jogo::repararIntegridade(Nave *n){
-	n->reparaNave();
-}
+
 
 void Jogo::eventos(Nave *n){
 	eventoCampoPoCosmico(n);

@@ -27,8 +27,8 @@ protected:
 public:
 	
 	Unidade();
-	Unidade(int hp, int reparador, int combatente, bool operador, int exoesqueleto, bool respira, int localizacao, string nome, string id, Sala *s); //CONSTRUTOR PARA OS TRIPULANTES
-	Unidade(int hp, bool respira, int inimigoX, int inimigoY, int move, int localizacao, string nome, string id, Sala *s); // Construtor para inimigos
+	Unidade(int hp, int reparador, int combatente, bool operador, int exoesqueleto, bool respira, string nome, string id, Sala *s); //CONSTRUTOR PARA OS TRIPULANTES
+	Unidade(int hp, bool respira, int inimigoX, int inimigoY, int move, string nome, string id, Sala *s); // Construtor para inimigos
 	
 	virtual ~Unidade(void);
 	

@@ -113,7 +113,7 @@
     <ClInclude Include="Consola.h" />
     <ClInclude Include="Desenho.h" />
     <ClInclude Include="Escudo.h" />
-    <ClInclude Include="Infermaria.h" />
+    <ClInclude Include="Enfermaria.h" />
     <ClInclude Include="Inimigos.h" />
     <ClInclude Include="Jogo.h" />
     <ClInclude Include="Maquina.h" />

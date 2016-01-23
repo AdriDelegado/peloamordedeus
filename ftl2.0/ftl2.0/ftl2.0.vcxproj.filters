@@ -173,9 +173,6 @@
     <ClInclude Include="SistSegInterno.h">
       <Filter>Header Files\Salas</Filter>
     </ClInclude>
-    <ClInclude Include="Infermaria.h">
-      <Filter>Header Files\Salas</Filter>
-    </ClInclude>
     <ClInclude Include="Armas.h">
       <Filter>Header Files\Salas</Filter>
     </ClInclude>
@@ -187,6 +184,9 @@
     </ClInclude>
     <ClInclude Include="Inimigos.h">
       <Filter>Header Files\Unidades</Filter>
+    </ClInclude>
+    <ClInclude Include="Enfermaria.h">
+      <Filter>Header Files\Salas</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

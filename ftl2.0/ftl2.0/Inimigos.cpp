@@ -3,7 +3,7 @@
 #include "Nave.h"
 
 
-Inimigos::Inimigos(string id, Sala *s) : Unidade(4, true, 1, 2, 15, true, 0, "Pirata", id, s){
+Inimigos::Inimigos(string id, Sala *s) : Unidade(4, true, 1, 2, 15, "Pirata", id, s){
 
 }
 

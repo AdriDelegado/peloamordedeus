@@ -33,7 +33,7 @@ public:
 	vector	<Unidade *> getOcupantes();
 	vector	<Sala *> getSalas();
 	
-	void reparaNave();
+
 	string criaSala(int v, int p, string nome);
 	void setSalasComuns();
 private:

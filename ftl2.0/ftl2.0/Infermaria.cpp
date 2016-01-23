@@ -1,15 +1,15 @@
-#include "Infermaria.h"
+#include "Enfermaria.h"
 
-Infermaria::Infermaria(string nome, int posicao) : Sala(nome, posicao, 9){}		// contrutor
-Infermaria::~Infermaria(void){}			//destrutor
+Enfermaria::Enfermaria(string nome, int posicao) : Sala(nome, posicao, 9){}		// contrutor
+Enfermaria::~Enfermaria(void){}			//destrutor
 
-Infermaria::Infermaria(){}
+Enfermaria::Enfermaria(){}
 
-void	Infermaria::setNivelEscudo(int nivelEscudo) { }
-int		Infermaria::getNivelEscudo() { return 0; }
-void	Infermaria::setNivelEscudoActual(int nivelEscudoActual) { }
-int		Infermaria::getNivelEscudoActual() { return 0; }
-bool	Infermaria::verificaId(string id){
+void	Enfermaria::setNivelEscudo(int nivelEscudo) { }
+int		Enfermaria::getNivelEscudo() { return 0; }
+void	Enfermaria::setNivelEscudoActual(int nivelEscudoActual) { }
+int		Enfermaria::getNivelEscudoActual() { return 0; }
+bool	Enfermaria::verificaId(string id){
 	for (int i = 0; i != unidades.size(); i++){
 
 		if (unidades.at(i)->getId() == id){
@@ -18,7 +18,7 @@ bool	Infermaria::verificaId(string id){
 	}
 	return false;
 }
-string Infermaria::setUnidade(Unidade *u) {
+string Enfermaria::setUnidade(Unidade *u) {
 	if (u != NULL && verificaId(u->getId()) == false){
 		unidades.push_back(u);
 	}
@@ -29,12 +29,12 @@ string Infermaria::setUnidade(Unidade *u) {
 	return "Sala " + u->getNome() + " introduzida com Sucasso";
 }
 
-vector<int> Infermaria::getAdjacenteSala()
+vector<int> Enfermaria::getAdjacenteSala()
 {
 	return this->adjacentes;
 }
 
-void Infermaria::setAdjacenteSala()
+void Enfermaria::setAdjacenteSala()
 {
 	if (this->posicao == 1)
 	{

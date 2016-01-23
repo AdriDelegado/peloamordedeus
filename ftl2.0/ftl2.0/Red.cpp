@@ -1,6 +1,6 @@
 #include "Red.h"
 #include "Sala.h"
-Red::Red(string id, Sala *s) : Unidade(5, 1, 1, true, 0, true, 0, "Camisa Vermelha", id, s){
+Red::Red(string id, Sala *s) : Unidade(5, 1, 1, true, 0, true,"Camisa Vermelha", id, s){
 
 }
 
