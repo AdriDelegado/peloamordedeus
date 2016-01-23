@@ -85,7 +85,7 @@
     <ClCompile Include="Consola.cpp" />
     <ClCompile Include="Desenho.cpp" />
     <ClCompile Include="Escudo.cpp" />
-    <ClCompile Include="Infermaria.cpp" />
+    <ClCompile Include="Enfermaria.cpp" />
     <ClCompile Include="Inimigos.cpp" />
     <ClCompile Include="Jogo.cpp" />
     <ClCompile Include="Main.cpp" />

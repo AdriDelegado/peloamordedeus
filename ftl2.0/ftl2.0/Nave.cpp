@@ -16,7 +16,24 @@
 #include "SistSegInterno.h"
 #include "AutoRep.h"
 Nave::Nave(){
+	Propulsor *SalaPropE = new Propulsor("Porpulsor E", 1);
 
+	setSalas(SalaPropE);
+
+	Maquina *SalaMaquinas = new Maquina("Maquinas", 5);
+	setSalas(SalaMaquinas);
+
+	SuppVida *SalaSuppVida = new SuppVida("Suporte de Vida", 6);
+	setSalas(SalaSuppVida);
+
+	Escudo *SalaControloEscudo = new Escudo("Controlo de Escudos", 7);
+	setSalas(SalaControloEscudo);
+
+	Ponte *SalaPonte = new Ponte("Ponte", 8);
+	setSalas(SalaPropE);
+
+	Propulsor *SalaPropD = new Propulsor("Propulsor D", 9);
+	setSalas(SalaPropE);
 }
 Nave::~Nave(void){}
 
@@ -131,29 +148,6 @@ string Nave::criaSala(int v, int p,string nome){
 			return "SHIET";
 
 	}
-}
-
-
-void Nave::setSalasComuns(){
-	Propulsor *SalaPropE = new Propulsor("Porpulsor E", 1);
-
-	setSalas(SalaPropE);
-
-	//Maquina *SalaMaquinas = new Maquina("Maquinas", 5);
-	//setSalas(SalaMaquinas);
-
-	//SuppVida *SalaSuppVida = new SuppVida("Suporte de Vida", 6);
-	//setSalas(SalaSuppVida);
-
-	//Escudo *SalaControloEscudo = new Escudo("Controlo de Escudos", 7);
-	//setSalas(SalaControloEscudo);
-
-	//Ponte *SalaPonte = new Ponte("Ponte", 8);
-	//setSalas(SalaPropE);
-
-	//Propulsor *SalaPropD = new Propulsor("Propulsor D", 9);
-	//setSalas(SalaPropE);
-
 }
 
 

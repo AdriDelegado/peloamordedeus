@@ -96,9 +96,6 @@
     <ClCompile Include="SistSegInterno.cpp">
       <Filter>Source Files\Salas</Filter>
     </ClCompile>
-    <ClCompile Include="Infermaria.cpp">
-      <Filter>Source Files\Salas</Filter>
-    </ClCompile>
     <ClCompile Include="Armas.cpp">
       <Filter>Source Files\Salas</Filter>
     </ClCompile>
@@ -110,6 +107,9 @@
     </ClCompile>
     <ClCompile Include="Inimigos.cpp">
       <Filter>Source Files\Unidades</Filter>
+    </ClCompile>
+    <ClCompile Include="Enfermaria.cpp">
+      <Filter>Source Files\Salas</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

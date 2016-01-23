@@ -182,72 +182,56 @@ void UserInterface::verificaComando(Comando &comObj)
 			escreve.escreveNomeSala(comObj.getArg2(), comObj.getPos());
 			c.gotoxy(84, 4); // posicçao da introduçao dos camandos
 			cout << msg;
+		}else if(comObj.getArg2()== "ARMAS"){
+			string msg = n.criaSala(7, comObj.getPos(), comObj.getArg2());
+			escreve.escreveNomeSala(comObj.getArg2(), comObj.getPos());
+			c.gotoxy(84, 4); // posicçao da introduçao dos camandos
+			cout << msg;
+		}
+		else if (comObj.getArg2() == "AUTOREP"){
+			string msg = n.criaSala(4, comObj.getPos(), comObj.getArg2());
+			escreve.escreveNomeSala(comObj.getArg2(), comObj.getPos());
+			c.gotoxy(84, 4); // posicçao da introduçao dos camandos
+			cout << msg;
+		}
+		else if (comObj.getArg2() == "CAPALOJ"){
+			string msg = n.criaSala(8, comObj.getPos(), comObj.getArg2());
+			escreve.escreveNomeSala(comObj.getArg2(), comObj.getPos());
+			c.gotoxy(84, 4); // posicçao da introduçao dos camandos
+			cout << msg;
+		}
+		else if (comObj.getArg2() == "ENFERMARIA"){
+			string msg = n.criaSala(6, comObj.getPos(), comObj.getArg2());
+			escreve.escreveNomeSala(comObj.getArg2(), comObj.getPos());
+			c.gotoxy(84, 4); // posicçao da introduçao dos camandos
+			cout << msg;
+		}
+		else if (comObj.getArg2() == "OFICINA"){
+			string msg = n.criaSala(9, comObj.getPos(), comObj.getArg2());
+			escreve.escreveNomeSala(comObj.getArg2(), comObj.getPos());
+			c.gotoxy(84, 4); // posicçao da introduçao dos camandos
+			cout << msg;
+		}
+		else if (comObj.getArg2() == "RAIOLASER"){
+			string msg = n.criaSala(3, comObj.getPos(), comObj.getArg2());
+			escreve.escreveNomeSala(comObj.getArg2(), comObj.getPos());
+			c.gotoxy(84, 4); // posicçao da introduçao dos camandos
+			cout << msg;
+		}
+		else if (comObj.getArg2() == "SEGURANCA"){
+			string msg = n.criaSala(5, comObj.getPos(), comObj.getArg2());
+			escreve.escreveNomeSala(comObj.getArg2(), comObj.getPos());
+			c.gotoxy(84, 4); // posicçao da introduçao dos camandos
+			cout << msg;
 		}
 
+	}
+	else if (comObj.getArg1() == "MOVE"){
+		//arg2 == o id da unidade 
+		//arg3 == destino
+	}
 
-
-
-
-
-
-		////	
-
-		////if (){
-		////	if (comObj.getArg2() == "sala"){
-		////		
-		////			int pos = veirifaPosica(comObj.getX(), comObj.getY());
-		////			
-		////			
-		////			
-		////		}
-		////	}
-
-		////	else if (comObj.getArg2() == "tripulante"){
-		////		if (comObj.getArg3() == "capitao"){
-		////			int pos = veirifaPosica(comObj.getX(), comObj.getY());
-
-		////			setCache(getCache() + 1);
-		////			ostringstream s;
-		////			s << "C" << getCache();
-		////			string id = (s.str());
-		////			Capitao *novoCapitao = new Capitao(id);
-		////			novoCapitao->setIdSala(pos);
-		////			apolo1.setTripulacao(*novoCapitao);
-		////			escreve.desenhaTripulante(id, pos, 0);
-
-		////			c.gotoxy(84, 4); // posicçao da introduçao dos camandos
-		////			cout << novoCapitao->getNome() << " criado com sucesso";
-		////		}
-		////		if (comObj.getArg3() == "camisa_vermelha"){
-		////			int pos = veirifaPosica(comObj.getX(), comObj.getY());
-		////			setCache(getCache() + 1);
-		////			ostringstream s;
-		////			s << "V" << getCache();
-		////			string id = (s.str());
-		////			CamisaVermelha *novoCamisaVermelha = new CamisaVermelha(id);
-		////			novoCamisaVermelha->setIdSala(pos);
-		////			apolo1.setTripulacao(*novoCamisaVermelha);
-		////			escreve.desenhaTripulante(id, pos, 0);
-
-		////			c.gotoxy(84, 4); // posicçao da introduçao dos camandos
-		////			cout << novoCamisaVermelha->getNome() << " criado com sucesso";
-		////		}
-		////		if (comObj.getArg3() == "robo"){
-		////			int pos = veirifaPosica(comObj.getX(), comObj.getY());
-		////			setCache(getCache() + 1);
-		////			ostringstream s;
-		////			s << "R" << getCache();
-		////			string id = (s.str());
-		////			Robo *novoRobo = new Robo(id);
-		////			novoRobo->setIdSala(pos);
-		////			apolo1.setTripulacao(*novoRobo);
-		////			escreve.desenhaTripulante(id, pos, 0);
-
-		////			c.gotoxy(84, 4); // posicçao da introduçao dos camandos
-		////			cout << novoRobo->getNome() << " criado com sucesso";
-		////		}
-		////	}
-		////}
+		
 		////else if (comObj.getArg1() == "move"){
 		////	for (int i = 0; i != apolo1.getTripulacao().size(); i++){
 		////		if (comObj.getArg2() == apolo1.getTripulacao().at(i)->getId()){
@@ -304,7 +288,7 @@ void UserInterface::verificaComando(Comando &comObj)
 		////	cout << "fim Jogo";
 		////	exit(0);
 		////}
-	}
+	
 }
 
 

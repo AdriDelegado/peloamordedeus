@@ -118,3 +118,14 @@ void Jogo::setMilhasActuais(int NmilhasActuais)
 {
 	this->milhasActuais = NmilhasActuais;
 }
+
+
+
+
+
+
+
+
+void Jogo::inicioJogo(){
+
+}

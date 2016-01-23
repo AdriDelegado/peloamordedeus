@@ -35,7 +35,7 @@ public:
 	
 
 	string criaSala(int v, int p, string nome);
-	void setSalasComuns();
+
 private:
 	bool verificaPosicao(int posicao);
 	bool verificaUnidadeExiste(string id);
