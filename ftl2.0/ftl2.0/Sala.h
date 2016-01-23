@@ -23,7 +23,10 @@ protected:
 
 	string nome;
 
+	vector <int> adjacentes;
 	vector <Unidade*> unidades;
+	vector <Unidade*> inimigos;
+	vector <Unidade*> xenomorfos;
 
 
 public:
@@ -89,10 +92,10 @@ public:
 	//pegar salas a volta funcao
 	//pegar quem esta na sala
 	void danificarSala(int dano);
-
+	virtual vector<int> getAdjacenteSala() = 0;
 	//string eliminaUnidade(Unidade *u);
 	virtual Sala *duplica() = 0;
-
+	virtual void setAdjacenteSala() = 0 ;
 
 	virtual bool verificaId(string id) = 0;
 
