@@ -39,7 +39,7 @@ Unidade::~Unidade(void){}
 void Unidade::inicioTurno(){
 	reparaIntegridade();
 	respiraOxigenio();
-
+	//fsddfdf
 
 }
 

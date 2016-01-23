@@ -131,6 +131,7 @@ public:
 	virtual void respiraOxigenio()=0;
 	virtual void moveProb(Nave *n) = 0;
 	/*virtual void flamejanteOxigenio() = 0;*/
+	//fdsjfi
 
 	
 
