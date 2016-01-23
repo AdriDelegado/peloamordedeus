@@ -26,7 +26,7 @@ string AutoRep::setUnidade(Unidade *u) {
 		return "Unidade com ID " + u->getId() + " escolhida ja esta ocupada";
 		delete(u);
 	}
-	return "Sala " + u->getNome() + " introduzida com Sucasso";
+	return "Sala " + u->getNome() + " introduzida com Sucesso";
 }
 
 vector<int> AutoRep::getAdjacenteSala()

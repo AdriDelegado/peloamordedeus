@@ -34,6 +34,8 @@ public:
 	void	setNome(string nome) { this->nome = nome; }
 	string	getNome() { return this->nome; }
 	string setUnidade(Unidade *u);
+	string setInimigos(Unidade *u);
+	string setXenomorfos(Unidade *u);
 	void	setAdjacenteSala();
 	vector<int> getAdjacenteSala();
 	

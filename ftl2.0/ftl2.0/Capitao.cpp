@@ -1,7 +1,7 @@
 #include "Capitao.h"
 #include "Sala.h"
 
-Capitao::Capitao(string id, Sala *s) : Unidade(6, 1, 2, true, 1, true, 0, "Capitao", id, s ){
+Capitao::Capitao(string id, Sala *s) : Unidade(6, 1, 2, true, 1, true, "Capitao", id, s ){
 
 }
 

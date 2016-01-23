@@ -3,7 +3,7 @@
 #include "Nave.h"
 
 
-Inimigos::Inimigos(string id, Sala *s) : Unidade(4, true, 1, 2, 15, true, 0, "Pirata", id, s){
+Inimigos::Inimigos(string id, Sala *s) : Unidade(4, true, 1, 2, 15, true, "Pirata", id, s){
 
 }
 
@@ -45,14 +45,15 @@ void Inimigos::moveProb(Nave *n)
 		{
 			if ((*it)->getPosicao() == newPosicao)
 			{
-				for (int i = 0; i != s->getUnidades().size(); i++)
+				(*it)->setInimigos(this->duplica);
+
+				for (int i = 0; i != s->getInimigos().size(); i++)
 				{
-					if (s->getUnidades().at(i)->getId() == this->getId())
+					if (s->getInimigos().at(i)->getId() == this->getId())
 					{
-						s->getUnidades().erase(s->getUnidades().begin() + i);
+						s->getInimigos().erase(s->getInimigos().begin() + i);
 					}
 				}
-				(*it)->setUnidade(this);
 			}
 		}
 	}

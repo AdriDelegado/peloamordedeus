@@ -35,7 +35,28 @@ public:
 	void setRespira(bool respira) { this->respira = respira; }
 	bool getRespira() { return this->respira; }
 
-	
+	void setXeno(int xeno) { this->xeno = xeno; }
+	int getXeno() { return this->xeno; }
+	void setCasulos(int casulos) { this->casulos = casulos; }
+	int getCasulos() { return this->casulos; }
+	void setRegenerador(int regenerador) { this->regenerador = regenerador; }
+	int getRegenerador() { return this->regenerador; }
+	void setHipnotizador(int hipnotizador) { this->hipnotizador = hipnotizador; }
+	int getHipnotizador() { return this->hipnotizador; }
+	void setMutatis(int mutatis) { this->mutatis = mutatis; }
+	int getMutatis() { return this->mutatis; }
+
+	int getInimigoX() { return 0; }
+	void setInimigoX(int inimigoX){}
+	int getInimigoY() { return 0; }
+	void setInimigoY(int inimigoY){}
+	int getMove()  { return 0; }
+	void setMove(int move)  {}
+
+
+	Unidade *duplica(){
+		return new Inimigos(*this);
+	}
 	
 
 	int reparaIntegridade(){ return 0; }

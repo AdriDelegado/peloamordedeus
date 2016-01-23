@@ -43,7 +43,7 @@ public:
 			return *this;
 		}
 
-		this->id = id;
+		this->id = x.id;
 		this->posicao = x.posicao;
 		this->oxigenio = x.oxigenio;
 		this->integridade = x.integridade;
@@ -89,8 +89,13 @@ public:
 
 	vector <Unidade*> getUnidades();
 	virtual string setUnidade(Unidade *u) = 0;
+	vector <Unidade*> getInimigos();
+	virtual string setInimigos(Unidade *u) = 0;
+	vector <Unidade*> getXenomorfos();
+	virtual string setXenomorfos(Unidade *u) = 0;
+
 	//FALTA
-	//pegar salas a volta funcao
+	
 	//pegar quem esta na sala
 	void danificarSala(int dano);
 	

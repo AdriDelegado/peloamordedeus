@@ -1,18 +1,18 @@
 #pragma once
-#ifndef CAPITAO_H
-#define CAPITAO_H
+#ifndef BLOB_H
+#define BLOB_H
 #include <iostream>
 #include <string>
 #include <vector>
 #include "Unidade.h"
 using namespace std;
 
-class Capitao : public Unidade{
+class Blob : public Unidade{
 
 public:
 
-	Capitao(string id, Sala *s);
-	~Capitao();
+	Blob(string id, Sala *s);
+	~Blob();
 
 	void setHp(int hp) { this->hp = hp; }
 	int getHp() { return this->hp; }
@@ -22,7 +22,7 @@ public:
 	int getCombatente() { return this->combatente; }
 	void setExoesqueleto(int exoesqueleto) { this->exoesqueleto = exoesqueleto; }
 	int getExoesqueleto() { return this->exoesqueleto; }
-	void setPosicaoSala(Sala *s) { this->s=s; }
+	void setPosicaoSala(Sala *s) { this->s = s; }
 	Sala* getPosicaoSala() { return this->s; }
 
 	void setId(string id) { this->id = id; }
@@ -34,7 +34,6 @@ public:
 	bool getOperador() { return this->operador; }
 	void setRespira(bool respira) { this->respira = respira; }
 	bool getRespira() { return this->respira; }
-
 
 	void setXeno(int xeno) { this->xeno = xeno; }
 	int getXeno() { return this->xeno; }
@@ -57,14 +56,15 @@ public:
 
 
 	Unidade *duplica(){
-		return new Capitao(*this);
+		return new Blob(*this);
 	}
 
-	
+
 	int reparaIntegridade();
 
 	void respiraOxigenio();
 	void moveProb(Nave *n){}
+
 
 
 };

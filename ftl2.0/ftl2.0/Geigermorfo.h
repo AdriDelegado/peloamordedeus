@@ -1,18 +1,18 @@
 #pragma once
-#ifndef CAPITAO_H
-#define CAPITAO_H
+#ifndef GEIGERMORFO_H
+#define GEIGERMORFO_H
 #include <iostream>
 #include <string>
 #include <vector>
 #include "Unidade.h"
 using namespace std;
 
-class Capitao : public Unidade{
+class Geigermorfo : public Unidade{
 
 public:
 
-	Capitao(string id, Sala *s);
-	~Capitao();
+	Geigermorfo(string id, Sala *s);
+	~Geigermorfo();
 
 	void setHp(int hp) { this->hp = hp; }
 	int getHp() { return this->hp; }
@@ -22,7 +22,7 @@ public:
 	int getCombatente() { return this->combatente; }
 	void setExoesqueleto(int exoesqueleto) { this->exoesqueleto = exoesqueleto; }
 	int getExoesqueleto() { return this->exoesqueleto; }
-	void setPosicaoSala(Sala *s) { this->s=s; }
+	void setPosicaoSala(Sala *s) { this->s = s; }
 	Sala* getPosicaoSala() { return this->s; }
 
 	void setId(string id) { this->id = id; }
@@ -35,7 +35,6 @@ public:
 	void setRespira(bool respira) { this->respira = respira; }
 	bool getRespira() { return this->respira; }
 
-
 	void setXeno(int xeno) { this->xeno = xeno; }
 	int getXeno() { return this->xeno; }
 	void setCasulos(int casulos) { this->casulos = casulos; }
@@ -47,7 +46,6 @@ public:
 	void setMutatis(int mutatis) { this->mutatis = mutatis; }
 	int getMutatis() { return this->mutatis; }
 
-
 	int getInimigoX() { return 0; }
 	void setInimigoX(int inimigoX){}
 	int getInimigoY() { return 0; }
@@ -57,10 +55,10 @@ public:
 
 
 	Unidade *duplica(){
-		return new Capitao(*this);
+		return new Geigermorfo(*this);
 	}
 
-	
+
 	int reparaIntegridade();
 
 	void respiraOxigenio();
