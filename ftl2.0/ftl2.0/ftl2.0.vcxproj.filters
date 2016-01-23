@@ -108,6 +108,9 @@
     <ClCompile Include="Oficina.cpp">
       <Filter>Source Files\Salas</Filter>
     </ClCompile>
+    <ClCompile Include="Inimigos.cpp">
+      <Filter>Source Files\Unidades</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Sala.h">
@@ -181,6 +184,9 @@
     </ClInclude>
     <ClInclude Include="Oficina.h">
       <Filter>Header Files\Salas</Filter>
+    </ClInclude>
+    <ClInclude Include="Inimigos.h">
+      <Filter>Header Files\Unidades</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -86,6 +86,7 @@
     <ClCompile Include="Desenho.cpp" />
     <ClCompile Include="Escudo.cpp" />
     <ClCompile Include="Infermaria.cpp" />
+    <ClCompile Include="Inimigos.cpp" />
     <ClCompile Include="Jogo.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Maquina.cpp" />
@@ -113,6 +114,7 @@
     <ClInclude Include="Desenho.h" />
     <ClInclude Include="Escudo.h" />
     <ClInclude Include="Infermaria.h" />
+    <ClInclude Include="Inimigos.h" />
     <ClInclude Include="Jogo.h" />
     <ClInclude Include="Maquina.h" />
     <ClInclude Include="Nave.h" />
