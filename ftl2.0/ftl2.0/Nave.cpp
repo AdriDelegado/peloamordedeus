@@ -8,8 +8,32 @@
 #include "Propulsor.h"
 #include "SuppVida.h"
 #include "Jogo.h"
+#include "RaioLaser.h"
+#include "Enfermaria.h"
+#include "Armas.h"
+#include "CapAlojamento.h"
+#include "Oficina.h"
+#include "SistSegInterno.h"
+#include "AutoRep.h"
 Nave::Nave(){
+	Propulsor *SalaPropE = new Propulsor("Porpulsor E", 1);
 
+	setSalas(SalaPropE);
+
+	Maquina *SalaMaquinas = new Maquina("Maquinas", 5);
+	setSalas(SalaMaquinas);
+
+	SuppVida *SalaSuppVida = new SuppVida("Suporte de Vida", 6);
+	setSalas(SalaSuppVida);
+
+	Escudo *SalaControloEscudo = new Escudo("Controlo de Escudos", 7);
+	setSalas(SalaControloEscudo);
+
+	Ponte *SalaPonte = new Ponte("Ponte", 8);
+	setSalas(SalaPropE);
+
+	Propulsor *SalaPropD = new Propulsor("Propulsor D", 9);
+	setSalas(SalaPropE);
 }
 Nave::~Nave(void){}
 
@@ -100,53 +124,30 @@ string Nave::criaSala(int v, int p,string nome){
 			break;
 
 		case 3:
+			return setSalas(new RaioLaser(nome, p));
 			break;
 		case 4:
-
-		break;
-
+			return setSalas(new AutoRep(nome, p));
+			break;
+		case 5:
+			return setSalas(new SistSegInterno(nome, p));
+			break;
+		case 6:
+			return setSalas(new Enfermaria(nome, p));
+			break;
+		case 7:
+			return setSalas(new Armas(nome, p));
+			break;
+		case 8:
+			return setSalas(new CapAlojamento(nome, p));
+			break;
+		case 9:
+			return setSalas(new Oficina(nome, p));
+			break;
 		default:
 			return "SHIET";
 
 	}
-}
-void Nave::reparaNave(){ // em principio vai ser do tipo stringo pra devolver a mensagem
-	vector<Sala*>::iterator it;
-	vector<Unidade*>::iterator it2;
-	for (it = salas.begin(); it != salas.end(); it++){
-		vector <Unidade*> u = (*it)->getUnidades();
-		
-		for (it2 = u.begin(); it2 != u.end(); it2++){
-			string idAux = (*it2)->getId();
-			vector<char> v(idAux.begin(), idAux.end());
-			if (idAux=="C" || idAux=="V"){ // se na sala tiver alguem com ID C oou V repara
-				cout << "Sala " << (*it)->getNome() << " foi reparada em " << (*it2)->reparaIntegridade() << " pontos";
-			}
-		}
-		
-	}
-}
-
-void Nave::setSalasComuns(){
-	Propulsor *SalaPropE = new Propulsor("Porpulsor E", 1);
-
-	setSalas(SalaPropE);
-
-	//Maquina *SalaMaquinas = new Maquina("Maquinas", 5);
-	//setSalas(SalaMaquinas);
-
-	//SuppVida *SalaSuppVida = new SuppVida("Suporte de Vida", 6);
-	//setSalas(SalaSuppVida);
-
-	//Escudo *SalaControloEscudo = new Escudo("Controlo de Escudos", 7);
-	//setSalas(SalaControloEscudo);
-
-	//Ponte *SalaPonte = new Ponte("Ponte", 8);
-	//setSalas(SalaPropE);
-
-	//Propulsor *SalaPropD = new Propulsor("Propulsor D", 9);
-	//setSalas(SalaPropE);
-
 }
 
 

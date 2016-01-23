@@ -6,7 +6,7 @@ Unidade::Unidade(int hp, int reparador, int combatente, bool operador, int exoes
 	this->hp = hp;
 	this->nome = nome;
 
-	this->s = s;
+	this->s = s->duplica();
 	this->id = id;
 	this->reparador = reparador;
 	this->combatente = combatente;
@@ -22,12 +22,13 @@ Unidade::Unidade(int hp, bool respira, int inimigoX, int inimigoY, int move, str
 	this->hp = hp;
 	this->nome = nome;
 
-	this->s = s;
+	
 	this->id = id;
 	this->move = move;
 	this->inimigoX = inimigoX;
 	this->inimigoY = inimigoY;
 	this->respira = respira;
+	this->s = s->duplica();
 }
 
 

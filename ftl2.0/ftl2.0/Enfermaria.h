@@ -1,6 +1,6 @@
 #pragma once
-#ifndef Infermaria_H
-#define Infermaria_H
+#ifndef Enfermaria_H
+#define Enfermaria_H
 #include "Sala.h"
 #include <iostream>
 #include <string>
@@ -8,13 +8,13 @@
 
 using namespace std;
 
-class Infermaria : public Sala
+class Enfermaria : public Sala
 {
 public:
 
-	Infermaria(string nome, int posicao);				//contrutor por defeito
-	~Infermaria(void);			//destrutor
-	Infermaria();
+	Enfermaria(string nome, int posicao);				//contrutor por defeito
+	~Enfermaria(void);			//destrutor
+	Enfermaria();
 
 	void	setId(int id) { this->id = id; }
 	int		getId() { return this->id; }
@@ -48,7 +48,7 @@ public:
 	
 
 	Sala *duplica(){
-		return new Infermaria(*this);
+		return new Enfermaria(*this);
 	}
 };
 

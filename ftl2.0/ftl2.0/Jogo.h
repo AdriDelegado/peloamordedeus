@@ -41,6 +41,7 @@ public:
 	void repararIntegridade(Nave *n);
 	void eventoCampoPoCosmico(Nave *n);
 	void eventos(Nave *n);
+	void inicioJogo();
 };
 
 #endif
