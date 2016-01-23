@@ -43,6 +43,10 @@ public:
 	virtual int getMove()  { return 0; }
 	virtual void setMove(int move)  {}
 
+	int reparaIntegridade();
+	void respiraOxigenio();
+	void moveProb(Nave *n);
+
 };
 
 #endif

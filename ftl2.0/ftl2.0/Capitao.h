@@ -49,7 +49,8 @@ public:
 
 
 	int reparaIntegridade();
-	void respira();
+	void respiraOxigenio();
+	void moveProb(Nave *n);
 };
 
 #endif

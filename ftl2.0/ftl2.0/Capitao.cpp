@@ -31,7 +31,7 @@ int Capitao::reparaIntegridade(){
 
 }
 
-void Capitao::respira(){
+void Capitao::respiraOxigenio(){
 
 	if (s->getOxigenio() > 0)
 	{

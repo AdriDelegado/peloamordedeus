@@ -34,6 +34,7 @@ public:
 	void	setNome(string nome) { this->nome = nome; }
 	string	getNome() { return this->nome; }
 	string setUnidade(Unidade *u);
+	void	setAdjacenteSala();
 	vector<int> getAdjacenteSala();
 
 	//TRETA

@@ -61,7 +61,7 @@ public:
 	virtual void setInimigoX(int inimigoX) = 0;
 	virtual int getInimigoY() = 0;
 	virtual void setInimigoY(int inimigoY) = 0;
-	virtual int getMove(Nave *n) = 0;
+	virtual int getMove() = 0;
 	virtual void setMove(int move) = 0;
 	
 
@@ -73,9 +73,9 @@ public:
 	//ataca
 
 
-	virtual int reparaIntegridade();
-	virtual void respira();
-	virtual void move();
+	virtual int reparaIntegridade()=0;
+	virtual void respiraOxigenio()=0;
+	virtual void moveProb(Nave *n) = 0;
 };
 
 

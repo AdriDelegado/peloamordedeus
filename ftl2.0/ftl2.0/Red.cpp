@@ -30,7 +30,7 @@ int Red::reparaIntegridade(){
 	
 }
 
-void Red::respira(){
+void Red::respiraOxigenio(){
 
 	if (s->getOxigenio() > 0)
 	{

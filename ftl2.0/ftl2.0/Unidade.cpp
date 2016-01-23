@@ -15,11 +15,29 @@ Unidade::Unidade(int hp, int reparador, int combatente, bool operador, int exoes
 	this->respira = respira;
 
 }
+
+//construtor para inimigos
+Unidade::Unidade(int hp, bool respira, int inimigoX, int inimigoY, int move, int localizacao, string nome, string id, Sala *s)
+{
+	this->hp = hp;
+	this->nome = nome;
+
+	this->s = s;
+	this->id = id;
+	this->move = move;
+	this->inimigoX = inimigoX;
+	this->inimigoY = inimigoY;
+	this->respira = respira;
+}
+
+
+
 Unidade::Unidade(){}
 Unidade::~Unidade(void){}
 
 void Unidade::inicioTurno(){
 	reparaIntegridade();
+	respiraOxigenio();
 
 
 }

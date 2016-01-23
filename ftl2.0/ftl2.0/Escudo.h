@@ -45,6 +45,7 @@ public:
 	string getNome() { return this->nome; }
 	bool verificaId(string id);
 	string setUnidade(Unidade *u);
+	void   setAdjacenteSala();
 	vector<int> getAdjacenteSala();
 
 	Sala *duplica(){

@@ -36,10 +36,11 @@ public:
 	bool getRespira() { return this->respira; }
 
 	
-	//não puras
+	
 
-	void respira();
-	void move(Nave *n);
+	int reparaIntegridade();
+	void respiraOxigenio();
+	void moveProb(Nave *n);
 
 };
 
