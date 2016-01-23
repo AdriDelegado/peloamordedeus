@@ -36,7 +36,7 @@ public:
 	string setUnidade(Unidade *u);
 	void	setAdjacenteSala();
 	vector<int> getAdjacenteSala();
-
+	void setAdjacenteSala();
 	//TRETA
 	void	setNivelEscudo(int nivelEscudo);
 	int		getNivelEscudo();

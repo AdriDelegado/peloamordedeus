@@ -39,8 +39,13 @@ public:
 	
 
 	int reparaIntegridade();
+<<<<<<< HEAD
 	void respiraOxigenio();
 	void moveProb(Nave *n);
+=======
+	void respira();
+	void move(Nave *n);
+>>>>>>> origin/master
 
 };
 

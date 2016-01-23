@@ -74,8 +74,13 @@ public:
 
 
 	virtual int reparaIntegridade()=0;
+<<<<<<< HEAD
 	virtual void respiraOxigenio()=0;
 	virtual void moveProb(Nave *n) = 0;
+=======
+	virtual void respira()=0;
+	virtual void move()=0;
+>>>>>>> origin/master
 };
 
 

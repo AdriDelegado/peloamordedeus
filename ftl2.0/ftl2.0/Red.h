@@ -47,7 +47,12 @@ public:
 	virtual void setMove(int move)  {}
 
 	int reparaIntegridade();
+<<<<<<< HEAD
 	void respiraOxigenio();
 	void moveProb(Nave *n);
+=======
+	void respira();
+	void move();
+>>>>>>> origin/master
 };
 #endif
